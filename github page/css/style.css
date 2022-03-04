@@ -1,0 +1,90 @@
+:root {
+        /* body style */
+    --body-text-color: rgb(255, 255, 255);
+    --body-bg-color: rgb(40,40,40);
+
+        /* main style */
+    --main-bg-color: #0a1a29;
+    --main-padding: 10px;
+    --main-border: 1px rgb(70,69,69) solid;
+    --main-border-radius: 30px;
+    --main-width: 40%;
+    --main-margin: 0 auto;
+
+        /* title style */
+    --title-bg-color: #17293bf1;
+    --title-text-color: white;
+    --title-padding: 12px;
+    --title-border-bottom: 1px #2c6472b0 solid;
+
+        /* content style */
+    --content-bg-color: #1c3146;
+    --content-padding: 20px;
+
+      /* title & content border radius */
+    --border-radius-tc: 20px;
+
+     /* title & content margin */
+    --margin-tc: 0;
+    /* darker text (social, projects, etc hyperlink) */
+    --darker-txt: rgb(211, 211, 211);
+}
+
+body {
+    background: var(--body-bg-color);
+    background-image: url("https://images7.alphacoders.com/809/thumb-1920-809458.jpg");
+    background-repeat: no-repeat;
+    background-size: fill;
+
+    font-size: 17px;
+    color: var(--body-text-color);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.main {
+    background: var(--main-bg-color);
+    padding: var(--main-padding);
+    border: var(--main-border);
+    border-radius: var(--main-border-radius);
+    width: var(--main-width);
+    margin: var(--main-margin);
+    max-height: 50%;
+}
+
+
+#div-width {
+    margin: 10px;
+}
+
+
+[aria-label="title"] {
+    background: var(--title-bg-color);
+    color: var(--title-text-color);
+    padding: var(--title-padding);
+    margin-bottom: var(--margin-tc);
+    border-bottom: var(--title-border-bottom);
+    border-top-left-radius: var(--border-radius-tc);
+    border-top-right-radius:  var(--border-radius-tc);
+}
+
+
+[aria-label="txt-darker"] {
+    color: var(--darker-txt);
+    text-decoration: none;
+}
+
+
+[aria-label="content"] {
+    background: var(--content-bg-color);
+    padding: var(--content-padding);
+    margin-top: var(--margin-tc);
+    border-bottom-left-radius: var(--border-radius-tc);
+    border-bottom-right-radius: var(--border-radius-tc);
+}
+
+@media only screen and (max-width: 1024px)  {
+    .main {
+        width: 90%;
+    }
+}

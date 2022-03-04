@@ -1,0 +1,27 @@
+/* ABOUT */
+abouttitle > h2[aria-label="title"]::before { content: 'About'}
+abcontent > p[aria-label="content"] ::after { 
+    content: '18 Year old british Furry Folf trying to learn languages (ReactJS, JavaScript and Python) I also enjoy doing Web Development and Photography.'
+}
+
+/* SOCIALS */
+socialstitle > h2[aria-label="title"]::before {content: 'Socials'}
+socialscontent > [aria-label="content"]  > li > discord::after {
+    content: 'Discord: Hue#1935'
+}
+socialscontent > [aria-label="content"]  > li > telegram::after {
+    content: 'Telegram: HueUwU'
+}
+socialscontent > [aria-label="content"]  > li > twitter::after {
+    content: 'Twitter: @HueOwO'
+}
+
+/* PROJECTS */
+projectstitle > h2[aria-label="title"]::before {content: 'Projects'}
+
+projectscontent > [aria-label="content"] > p > websitebutreacttitle::after {
+    content: 'Website but react'
+}
+projectscontent > [aria-label="content"] > li > websitebutreact::after {
+    content: "GitHub Repository"
+}
